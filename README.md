@@ -1,2 +1,2 @@
 # stressbooster
-this is the end stress booster application
+This is the stress buster front end application
