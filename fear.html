@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .btn {
+            cursor: pointer;
+            position: relative;
+            padding: 10px 20px;
+            background: #3498db;
+            color: #fff;
+            font-size: 28px;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.5s, transform 0.2s;
+            margin: 10px 0;
+            margin-left: 20px; /* Add left margin to the buttons */
+        }
+
+        .btn:hover {
+            background: #84a0b3;
+            transform: scale(1.05);
+        }
+
+        .data-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .aa {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-family: "Times New Roman", Times, serif;
+            margin-right: 10px;
+            margin-left: 30px; /* Add left margin to the heading */
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: color 0.5s, transform 0.2s;
+        }
+
+        h1:hover {
+            color: #ffbb00;
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="data-container">
+        <h1 class="title">Reason for your Fear??</h1>
+        
+        <form id="personalForm" action="fearpersonal.html">
+            <div class="aa">
+                <button type="submit" class="btn">Personal Reason</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const educationalForm = document.getElementById("educationalForm");
+        const personalForm = document.getElementById("personalForm");
+
+        educationalForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            window.location.href = educationalForm.getAttribute("action");
+        });
+
+        personalForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            window.location.href = personalForm.getAttribute("action");
+        });
+    </script>
+</body>
+
+</html>
