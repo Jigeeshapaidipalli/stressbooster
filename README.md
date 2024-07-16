@@ -1,2 +1,2 @@
-# stressbooster
-This is the stress buster front end application
+# stressbuster
+Collaboratively developed a project -"STRESS BUSTER" using HTML,CSS focusing on frontend development
